@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		8C99DE142AA5B4EC009381AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE132AA5B4EC009381AF /* AppDelegate.swift */; };
 		8C99DE162AA5B4EC009381AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE152AA5B4EC009381AF /* SceneDelegate.swift */; };
-		8C99DE182AA5B4EC009381AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE172AA5B4EC009381AF /* ViewController.swift */; };
-		8C99DE1B2AA5B4EC009381AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C99DE192AA5B4EC009381AF /* Main.storyboard */; };
+		8C99DE182AA5B4EC009381AF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE172AA5B4EC009381AF /* LoginVC.swift */; };
 		8C99DE1D2AA5B4EE009381AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C99DE1C2AA5B4EE009381AF /* Assets.xcassets */; };
 		8C99DE202AA5B4EE009381AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C99DE1E2AA5B4EE009381AF /* LaunchScreen.storyboard */; };
+		8C99DE282AA71B65009381AF /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE272AA71B65009381AF /* RegisterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C99DE102AA5B4EC009381AF /* TwitterLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C99DE132AA5B4EC009381AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C99DE152AA5B4EC009381AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C99DE172AA5B4EC009381AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8C99DE1A2AA5B4EC009381AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C99DE172AA5B4EC009381AF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8C99DE1C2AA5B4EE009381AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C99DE1F2AA5B4EE009381AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C99DE212AA5B4EE009381AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C99DE272AA71B65009381AF /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				8C99DE132AA5B4EC009381AF /* AppDelegate.swift */,
 				8C99DE152AA5B4EC009381AF /* SceneDelegate.swift */,
-				8C99DE172AA5B4EC009381AF /* ViewController.swift */,
-				8C99DE192AA5B4EC009381AF /* Main.storyboard */,
+				8C99DE172AA5B4EC009381AF /* LoginVC.swift */,
+				8C99DE272AA71B65009381AF /* RegisterVC.swift */,
 				8C99DE1C2AA5B4EE009381AF /* Assets.xcassets */,
 				8C99DE1E2AA5B4EE009381AF /* LaunchScreen.storyboard */,
 				8C99DE212AA5B4EE009381AF /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				8C99DE202AA5B4EE009381AF /* LaunchScreen.storyboard in Resources */,
 				8C99DE1D2AA5B4EE009381AF /* Assets.xcassets in Resources */,
-				8C99DE1B2AA5B4EC009381AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C99DE182AA5B4EC009381AF /* ViewController.swift in Sources */,
+				8C99DE182AA5B4EC009381AF /* LoginVC.swift in Sources */,
+				8C99DE282AA71B65009381AF /* RegisterVC.swift in Sources */,
 				8C99DE142AA5B4EC009381AF /* AppDelegate.swift in Sources */,
 				8C99DE162AA5B4EC009381AF /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8C99DE192AA5B4EC009381AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C99DE1A2AA5B4EC009381AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8C99DE1E2AA5B4EE009381AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +283,6 @@
 				INFOPLIST_FILE = TwitterLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +309,6 @@
 				INFOPLIST_FILE = TwitterLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
