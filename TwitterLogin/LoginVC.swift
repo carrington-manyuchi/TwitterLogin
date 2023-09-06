@@ -77,6 +77,31 @@ class LoginVC: UIViewController {
         loginButton.backgroundColor = UIColorFromRGB(rgbValue: 0x1DA1F2)
         extraTextLabel.textColor = UIColorFromRGB(rgbValue: 0x14171A)
         setupUI()
+        loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+        //loginButton.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
+    }
+    
+    
+    @objc func loginTapped() {
+        guard let user = userTextField.text, userTextField.text?.count != 0 else {
+            userTextField.attributedPlaceholder = NSAttributedString(string: "Please enter email",
+                                                                     attributes: [NSAttributedString.Key.foregroundColor: UIColor.red,
+                                                                                  NSAttributedString.Key.font: UIFont(name: "Avenir", size: 18)!]
+            )
+            return
+        }
+        
+        
+        guard let password = pswdTextField.text, pswdTextField.text?.count != 0 else {
+            pswdTextField.attributedPlaceholder = NSAttributedString(string: "Please enter password",
+                                                                     attributes: [NSAttributedString.Key.foregroundColor: UIColor.red,
+                                                                                  NSAttributedString.Key.font: UIFont(name: "Avenir", size: 18)!]
+            )
+            return
+        }
+        
+        print(user)
+        print(password)
     }
     
     
