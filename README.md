@@ -3,6 +3,9 @@
 
 In this app I have created a responsive Twitter Login page. 
 
+
+![Screenshot 2023-11-09 at 10 28 43](https://github.com/carrington-manyuchi/TwitterLogin/assets/60835640/30463bdc-4189-4c55-a1c5-77b88fe3bc8e)
+
 # Accomplishments
 - UIScrollView
 - UILabel
